@@ -1,4 +1,3 @@
-import Transfer from "@/components/dashboard/Transfer";
 import Link from "next/link";
 import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
@@ -15,7 +14,6 @@ export default function TransferPage() {
           <span className="font-semibold">History</span>
         </Link>
       </div>
-      <Transfer />
     </div>
   );
 }
