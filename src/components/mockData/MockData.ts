@@ -248,8 +248,8 @@ export const mockAccounts: Account[] = [
       password: 'Marinaahmed01'
     },
     account_details: {
-      wallet_address: '2400 Milhaven Dr,Richmond VA 23238',
-      dubWalletAddress: '2400 Milhaven Dr,Richmond VA 23238',
+      wallet_address: '35tuPvcdn....81mHffLpX',
+      dubWalletAddress: '35tuPvcdn....81mHffLpX',
       balance_usd: 20000.0
     },
     transaction_mgs_code: {
