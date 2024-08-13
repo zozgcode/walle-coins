@@ -43,7 +43,7 @@ export default function Profile() {
             <div className="flex w-full justify-between items-center">
             <span className="text-[#3f3f3f] font-normal">Address</span>
             <span className="text-[#252525] font-medium truncate max-w-[200px] sm:max-w-full">
-                {user.account_details.wallet_address}
+                {user.account_details.dubWalletAddress}
             </span>
             </div>
             <div className="flex w-full justify-between items-center">

@@ -49,7 +49,7 @@ export default function TransactionHistory() {
       <div className="pt-4">
         {user.transaction_history.map((transaction: Transaction) => (
           <div key={transaction.transaction_id} className="flex justify-between p-4 mb-2 bg-white shadow-sm rounded-lg">
-            <div className="flex items-center">
+            <div className="flex">
               <div className="mr-4">
                 {transaction.description === 'Transfer' ? (
                   <GoArrowUpRight className="text-2xl text-gray-500" />
@@ -58,7 +58,7 @@ export default function TransactionHistory() {
                 )}
               </div>
               <div>
-                <p className="text-sm text-gray-500">{getFormattedDate(transaction.date)}</p>
+                <p className="text-sm text-gray-500">{getFormattedDate(transaction.date)}, {transaction.time}</p>
                 <p className="text-lg">{transaction.description}</p>
                 <p className="text-sm text-gray-500">To: {transaction.walletAddress}</p>
               </div>

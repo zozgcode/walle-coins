@@ -5,12 +5,11 @@ import { Account } from '@/utils/types';
 import Link from 'next/link';
 import Header from './header/Header';
 import { formatCurrency } from '../formatCurrency';
-import { IoIosArrowForward } from 'react-icons/io';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 import Loader from '../Loader';
-import { BillIcon, CardIcon } from '../svgIcons';
-import { IoArrowUpOutline, IoArrowDownOutline } from 'react-icons/io5';
 import { GoArrowDown, GoArrowUp } from 'react-icons/go';
+import { IoReaderOutline } from "react-icons/io5";
+
 import Image from 'next/image';
 
 const getFormattedDate = () => {
@@ -116,7 +115,7 @@ export default function Dashboard() {
         </Link>
         <Link href="/dashboard/transactions" className="flex flex-col items-center justify-center gap-2">
           <button className="text-2xl p-2 flex items-center justify-center bg-[#e7e7e7] shadow-sm text-black w-[60px] h-[60px] rounded-full">
-            <GoArrowDown />
+            <IoReaderOutline />
           </button>
           <span className="text-black text-base">History</span>
         </Link>

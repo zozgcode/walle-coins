@@ -11,6 +11,7 @@ export interface Account {
   };
   account_details: {
     wallet_address: string;
+    dubWalletAddress?: string;
     balance_usd: number;
   };
   transaction_mgs_code: {
@@ -25,6 +26,7 @@ export interface Account {
 export interface Transaction {
   transaction_id: string;
   date: string;
+  time?: string;
   description: string;
   walletAddress: string;
   status: string;

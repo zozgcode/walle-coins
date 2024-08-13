@@ -13,7 +13,7 @@ export const mockAccounts: Account[] = [
     },
     account_details: {
       wallet_address: 'bc1qw508d...za67d7',
-      balance_usd: 5209.0
+      balance_usd: 20000.0
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -111,7 +111,7 @@ export const mockAccounts: Account[] = [
     },
     account_details: {
       wallet_address: '35tuPvcdn...81mHffLpX',
-      balance_usd: 5209.0
+      balance_usd: 20000.0
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -215,7 +215,100 @@ export const mockAccounts: Account[] = [
         assetsName: 'BTC',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
         quantity: 0.083,
-        assetRecentPrice: 5209.0
+        assetRecentPrice: 20000.0
+      },
+      {
+        assetsName: 'BCH',
+        assetsLogo: 'https://i.imgur.com/eZTcmSl.png',
+        quantity: 0,
+        assetRecentPrice: 0.0
+      },
+      {
+        assetsName: 'ETH',
+        assetsLogo: 'https://i.imgur.com/feMQhL4.png',
+        quantity: 0,
+        assetRecentPrice: 0.0
+      },
+      {
+        assetsName: 'BNB',
+        assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
+        quantity: 0,
+        assetRecentPrice: 0.0
+      }
+    ]
+  },
+  {
+    account_id: 'ACC003',
+    holder: {
+      firstName: '',
+      lastName: '',
+      email: 'm*@gmail.com',
+      jointNames: '',
+      username: 'Marinakouti2@gmail.com',
+      password: 'Marinaahmed01'
+    },
+    account_details: {
+      wallet_address: '2400 Milhaven Dr,Richmond VA 23238',
+      dubWalletAddress: '2400 Milhaven Dr,Richmond VA 23238',
+      balance_usd: 20000.0
+    },
+    transaction_mgs_code: {
+      transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
+      transaction_code: '',
+      wireDate: true
+    },
+    transaction_history: [
+      {
+        transaction_id: 'TXN001',
+        date: 'August 13, 2024',
+        time: '09:22',
+        description: 'Deposit BTC',
+        walletAddress: '3J98t1Wp...X5hA5B',
+        status: 'Success',
+        quantity: 0.082,
+        amount_in_usd: 5000.0,
+        assets: "BTC"
+      },
+      {
+        transaction_id: 'TXN002',
+        date: 'August 13, 2024',
+        time: '11:00',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1qw508d...za67d7',
+        status: 'Success',
+        quantity: 0.082,
+        amount_in_usd: 5000.0,
+        assets: "BTC"
+      },
+      {
+        transaction_id: 'TXN003',
+        date: 'August 13, 2024',
+        time: '12:03',
+        description: 'Deposit BTC',
+        walletAddress: '1BoatSLR...21aF5W',
+        status: 'Success',
+        quantity: 0.082,
+        amount_in_usd: 5000.0,
+        assets: "BTC"
+      },
+      {
+        transaction_id: 'TXN004',
+        date: 'August 13, 2024',
+        time: '14:33',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1qar0s8...53kw5n',
+        status: 'Success',
+        quantity: 0.082,
+        amount_in_usd: 5000.0,
+        assets: "BTC"
+      },
+    ],
+    assets: [
+      {
+        assetsName: 'BTC',
+        assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
+        quantity: 0.33,
+        assetRecentPrice: 20000.0
       },
       {
         assetsName: 'BCH',
