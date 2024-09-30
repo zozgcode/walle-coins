@@ -21,7 +21,7 @@ export default function Header({ handleLogout, user }: any) {
 
   return (
     <div className="w-full mb-2 min-h-[30px] relative flex items-center justify-between p-[16px] py-[15px]">
-      <div className="flex items-center gap-2">
+      {/* <div className="flex items-center gap-2">
         <Image src="https://i.imgur.com/zELSpwE.png" width={200} height={200} className="w-[20px] h-20px] rounded-full" alt="logo" />
         <div className="">
           <p className="text-black text-xs font-semibold">Public Address</p>
@@ -31,7 +31,7 @@ export default function Header({ handleLogout, user }: any) {
             {copied && <span className="text-green-500 text-xs">Copied!</span>}
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

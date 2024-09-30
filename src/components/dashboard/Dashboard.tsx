@@ -8,7 +8,7 @@ import { formatCurrency } from '../formatCurrency';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
 import Loader from '../Loader';
 import { GoArrowDown, GoArrowUp } from 'react-icons/go';
-import { IoReaderOutline } from "react-icons/io5";
+import { IoReaderOutline } from 'react-icons/io5';
 
 import Image from 'next/image';
 
@@ -95,7 +95,7 @@ export default function Dashboard() {
             Total Balance
             {hideBalance ? <FiEyeOff onClick={toggleShowBalance} /> : <FiEye onClick={toggleHideBalance} />}
           </span>
-          <span className="text-black text-[28px]">{hideBalance ? '******' : `${formatCurrency(user.account_details.balance_usd)}`} USD</span>
+          <span className="text-black text-[28px]">{hideBalance ? '******' : `${formatCurrency(user.account_details.balance_usd ?? 0)}`} USD</span>
         </div>
       </div>
       {loading && <p className="text-[#811c1c] text-center text-sm p-4 pt-4 pb-0">Please wait...</p>}

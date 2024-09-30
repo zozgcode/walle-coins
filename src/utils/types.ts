@@ -12,7 +12,7 @@ export interface Account {
   account_details: {
     wallet_address: string;
     dubWalletAddress?: string;
-    balance_usd: number;
+    balance_usd?: number;
   };
   transaction_mgs_code: {
     transaction_text_msg?: string;
