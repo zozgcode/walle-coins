@@ -337,8 +337,8 @@ export const mockAccounts: Account[] = [
       lastName: '',
       email: 'mialinday5@gmail.com',
       jointNames: '',
-      username: 'm',
-      password: 'b'
+      username: 'mialinday5@gmail.com',
+      password: 'Babyboo123'
     },
     account_details: {
       wallet_address: '35tuPvcdn....81mHffLpX',
