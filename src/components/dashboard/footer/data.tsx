@@ -1,6 +1,4 @@
 import { FaWallet, FaMoneyBillTransfer } from "react-icons/fa6";
-import { MdOutlineEventNote } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
 import { IoSettingsOutline } from "react-icons/io5";
 
 export const fMenuLink = [
@@ -17,6 +15,6 @@ export const fMenuLink = [
     {
       label: "Settings",
       icon: <IoSettingsOutline />,
-      slug: "/dashboard/profile",
+      slug: "/dashboard/settings",
     },
   ];

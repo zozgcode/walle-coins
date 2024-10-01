@@ -69,7 +69,7 @@ const SelectBks: React.FC<SelectBksProps> = ({
 
       <div className={`fixed z-20 w-full top-0 right-0 left-0 ${ isModalOpen ? "block" : "hidden" }`} >
         <div className="bg-white rounded shadow-lg w-full h-screen">
-          <div className="bg-[#d71e28] text-[#ffffff] sticky top-0 z-10 p-3 py-5 flex items-center justify-between gap-1">
+          <div className="bg-[#d71e28] text-[#ffffff] sticky bg-[#212121] top-0 z-10 p-3 py-5 flex items-center justify-between gap-1">
             <div className="flex items-center gap-2">
               <IoClose className="relative text-xl top-[1px]" onClick={handleCloseModal} />
               <span className="font-semibold">Select Bank</span>

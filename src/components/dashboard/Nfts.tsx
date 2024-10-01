@@ -5,15 +5,15 @@ import { IoIosArrowBack } from 'react-icons/io';
 
 export default function Nfts() {
   return (
-    <div className="border w-full bg-[#FAFAF8]">
-      <div className="bg-white sticky top-0 z-10 p-3 py-5 flex items-center justify-between gap-1">
-        <Link href="/dashboard" className="flex items-center gap-2">
+    <div className="w-full bg-[#212121]">
+      <div className="sticky bg-[#212121] border-b border-b-[#757575] top-0 z-10 p-3 py-5 flex items-center justify-between gap-1">
+        <Link href="/dashboard" className="flex text-white items-center gap-2">
           <IoIosArrowBack />
-          <span className="text-[#252525] font-semibold">Your NFTs</span>
+          <span className="font-semibold">Your NFTs</span>
         </Link>
       </div>
       <div className="px-4 mt-4">
-        <div className="bg-transparent text-xl px-4 text-center">No Assets</div>
+        <div className="text-[#c0c0c0] pt-10 text-xl px-4 text-center">No Assets</div>
       </div>
     </div>
   );
