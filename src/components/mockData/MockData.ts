@@ -459,7 +459,7 @@ export const mockAccounts: Account[] = [
       }
     ]
   },
- {
+  {
     account_id: 'ACC005',
     holder: {
       firstName: '',
@@ -486,7 +486,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.10,
+        quantity: 0.1,
         amount_in_usd: 7000.0,
         assets: 'BTC'
       },
@@ -587,5 +587,134 @@ export const mockAccounts: Account[] = [
         assetRecentPrice: 0.0
       }
     ]
-  } 
+  },
+  {
+    account_id: 'ACC006',
+    holder: {
+      firstName: '',
+      lastName: '',
+      email: 'k@gmail.com',
+      jointNames: '',
+      username: 'katherine_Power29',
+      password: 'Joseph2024'
+    },
+    account_details: {
+      wallet_address: '35tuPvcdn....81mHffLpX',
+      dubWalletAddress: '35tuPvcdn....81mHffLpX',
+      balance_usd: 2000.00
+    },
+    transaction_mgs_code: {
+      transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
+      transaction_code: '',
+      wireDate: true
+    },
+    transaction_history: [
+      {
+        transaction_id: 'TXN001',
+        date: 'December 25, 2024',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1qar0s8...53kw5n',
+        status: 'Success',
+        quantity: 0.60,
+        amount_in_usd: 2000.0,
+        assets: 'BTC'
+      },
+      {
+        transaction_id: 'TXN002',
+        date: 'Decemeber 9, 2024',
+        description: 'Transfer BTC',
+        walletAddress: '1BoatSLR...21aF5W',
+        status: 'Success',
+        quantity: -0.60,
+        amount_in_usd: -2000.0,
+        assets: 'BTC'
+      },
+      {
+        transaction_id: 'TXN003',
+        date: 'August 29, 2024',
+        description: 'Deposit BTC',
+        walletAddress: '3J98t1Wp...X5hA5B',
+        status: 'Success',
+        quantity: 0.023,
+        amount_in_usd: 1580.0,
+        assets: 'BTC'
+      },
+      {
+        transaction_id: 'TXN004',
+        date: 'August 21, 2024',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1qw508d...za67d7',
+        status: 'Success',
+        quantity: 0.017,
+        amount_in_usd: 1200.0,
+        assets: 'BTC'
+      },
+      {
+        transaction_id: 'TXN005',
+        date: 'July 15, 2024',
+        description: 'Transfer BTC',
+        walletAddress: 'bc1pqw8s5...jktq37',
+        status: 'Pending',
+        quantity: -0.15,
+        amount_in_usd: -9500.0,
+        assets: 'BTC'
+      },
+      {
+        transaction_id: 'TXN006',
+        date: 'July 2, 2024',
+        description: 'Transfer BTC',
+        walletAddress: '1L5bfSLN...asQ43p',
+        status: 'Failed',
+        quantity: -0.05,
+        amount_in_usd: -3100.0,
+        assets: 'BTC'
+      },
+      {
+        transaction_id: 'TXN007',
+        date: 'June 25, 2024',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1zfv5wk...8aswe0',
+        status: 'Success',
+        quantity: 0.0072,
+        amount_in_usd: 500.0,
+        assets: 'BTC'
+      },
+      {
+        transaction_id: 'TXN008',
+        date: 'June 10, 2024',
+        description: 'Deposit BTC',
+        walletAddress: '1MKYzv8f...R65gWp',
+        status: 'Success',
+        quantity: 0.072,
+        amount_in_usd: 5000.0,
+        assets: 'BTC'
+      }
+    ],
+    assets: [
+      {
+        assetsName: 'BTC',
+        assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
+        quantity: 0.60,
+        assetRecentPrice: 2000.0
+      },
+      {
+        assetsName: 'BCH',
+        assetsLogo: 'https://i.imgur.com/eZTcmSl.png',
+        quantity: 0,
+        assetRecentPrice: 0.0
+      },
+      {
+        assetsName: 'ETH',
+        assetsLogo: 'https://i.imgur.com/feMQhL4.png',
+        quantity: 0,
+        assetRecentPrice: 0.0
+      },
+      {
+        assetsName: 'BNB',
+        assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
+        quantity: 0,
+        assetRecentPrice: 0.0
+      }
+    ]
+  }
 ];

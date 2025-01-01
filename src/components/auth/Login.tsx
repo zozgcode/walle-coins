@@ -45,9 +45,9 @@ export default function Login() {
               <input type="text" value={username} className="px-[23px] py-[10px] w-full h-[60px] rounded-[15px] bg-[#232436] text-[#ffffff] outline-none" onChange={e => setUsername(e.target.value)} />
             </div>
             <div className="flex flex-col gap-3">
-              <label htmlFor="password" className="text-[#fff] hidden flex justify-between items-center text-[16px]">
+              <label htmlFor="password" className="text-[#fff] flex justify-between items-center text-[16px]">
                 <span>Password</span>
-                <Link href="" className='text-sm text-[#FFC92C]'>Forgot password?</Link>
+                <Link href="" className='text-sm hidden text-[#FFC92C]'>Forgot password?</Link>
               </label>
               <input type="password" value={password} className="px-[23px] py-[10px] w-full h-[60px] rounded-[15px] bg-[#232436] text-[#ffffff] outline-none" onChange={e => setPassword(e.target.value)} />
             </div>
