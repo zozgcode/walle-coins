@@ -601,7 +601,7 @@ export const mockAccounts: Account[] = [
     account_details: {
       wallet_address: '35tuPvcdn....81mHffLpX',
       dubWalletAddress: '35tuPvcdn....81mHffLpX',
-      balance_usd: 2000.00
+      balance_usd: 3000.00
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -609,6 +609,16 @@ export const mockAccounts: Account[] = [
       wireDate: true
     },
     transaction_history: [
+      {
+        transaction_id: 'TXN000',
+        date: 'January 2, 2024',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1s443...10j837',
+        status: 'Success',
+        quantity: 0.29,
+        amount_in_usd: 1000.0,
+        assets: 'BTC'
+      },
       {
         transaction_id: 'TXN001',
         date: 'December 25, 2024',
@@ -694,8 +704,8 @@ export const mockAccounts: Account[] = [
       {
         assetsName: 'BTC',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 0.60,
-        assetRecentPrice: 2000.0
+        quantity: 0.86,
+        assetRecentPrice: 3000.0
       },
       {
         assetsName: 'BCH',
