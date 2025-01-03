@@ -601,7 +601,7 @@ export const mockAccounts: Account[] = [
     account_details: {
       wallet_address: '35tuPvcdn....81mHffLpX',
       dubWalletAddress: '35tuPvcdn....81mHffLpX',
-      balance_usd: 3000.00
+      balance_usd: 3102.12
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -705,7 +705,7 @@ export const mockAccounts: Account[] = [
         assetsName: 'BTC',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
         quantity: 0.86,
-        assetRecentPrice: 3000.0
+        assetRecentPrice: 3102.12
       },
       {
         assetsName: 'BCH',
