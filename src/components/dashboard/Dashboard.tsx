@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Account } from '@/utils/types';
+import { Account, Assets } from '@/utils/types';
 import Link from 'next/link';
 import Header from './header/Header';
 import { formatCurrency } from '../formatCurrency';
@@ -11,6 +11,7 @@ import { GoArrowDown, GoArrowUp } from 'react-icons/go';
 import { IoReaderOutline } from 'react-icons/io5';
 
 import Image from 'next/image';
+import AssetDetails from './AssetDetails';
 
 const getFormattedDate = () => {
   const options: Intl.DateTimeFormatOptions = {
@@ -29,6 +30,7 @@ export default function Dashboard() {
   const [assetPrices, setAssetPrices] = useState<{ [key: string]: number }>({});
   const [showMsg, setShowMsg] = useState(false);
   const [loading, setIsLoading] = useState(false);
+  const [selectedAsset, setSelectedAsset] = useState<Assets | null>(null);
 
   const toggleShowMsg = () => {
     setIsLoading(true);
@@ -45,6 +47,18 @@ export default function Dashboard() {
 
   const toggleShowBalance = () => {
     setHideBalance(false);
+  };
+
+  const handleAssetClick = (asset: Assets) => {
+    if (!asset.assetsName) {
+      console.error("Asset name is undefined");
+      return;
+    }
+    setSelectedAsset(asset);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedAsset(null); // Close the modal by resetting the selected asset
   };
 
   useEffect(() => {
@@ -86,6 +100,12 @@ export default function Dashboard() {
 
   const formattedDate = getFormattedDate();
 
+  // Calculate total balance in USD
+  const totalBalanceUSD = user.assets.reduce((total, asset) => {
+    const assetPrice = assetPrices[asset.assetsName] || 0;
+    return total + assetPrice * asset.quantity;
+  }, 0);
+
   return (
     <div className="w-full h-full pb-20">
       <Header handleLogout={handleLogout} user={user} />
@@ -95,7 +115,7 @@ export default function Dashboard() {
             Total Balance
             {hideBalance ? <FiEyeOff onClick={toggleShowBalance} /> : <FiEye onClick={toggleHideBalance} />}
           </span>
-          <span className="text-white text-[28px]">{hideBalance ? '******' : `${formatCurrency(user.account_details.balance_usd ?? 0)}`} USD</span>
+          <span className="text-white text-[28px]"> {hideBalance ? '*****' : formatCurrency(totalBalanceUSD)}</span>
         </div>
       </div>
       {loading && <p className="text-[#811c1c] text-center text-sm p-4 pt-4 pb-0">Please wait...</p>}
@@ -109,7 +129,15 @@ export default function Dashboard() {
           </button>
           <span className="text-white text-base">Send</span>
         </Link>
-        <Link href="" className="flex flex-col items-center justify-center gap-2" onClick={toggleShowMsg}>
+        <button
+          className="flex flex-col items-center justify-center gap-2"
+          onClick={e => {
+            e.preventDefault(); // Prevent navigation
+            if (user.assets.length > 0) {
+              setSelectedAsset(user.assets[0]); // Select the coin asset to show
+            }
+          }}
+        >
           <button className="text-2xl p-2 flex items-center justify-center bg-[#2A2A2A] shadow-sm text-[#ab9ff2] w-[60px] h-[60px] rounded-full">
             <svg fill="none" viewBox="0 0 24 24" width="24px" height="24px" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="_1xhfa5af _1qwevyc107 _1qwevyc11f _1qwevyc2w3">
               <path
@@ -131,7 +159,7 @@ export default function Dashboard() {
             </svg>
           </button>
           <span className="text-white text-base">Receive</span>
-        </Link>
+        </button>
         <Link href="/dashboard/transactions" className="flex flex-col items-center justify-center gap-2">
           <button className="text-2xl p-2 flex items-center justify-center bg-[#2A2A2A] shadow-sm text-[#ab9ff2] w-[60px] h-[60px] rounded-full">
             <IoReaderOutline />
@@ -147,25 +175,37 @@ export default function Dashboard() {
       </div>
       <div className="mt-10 px-4">
         <p className="mb-3 text-white">Assets</p>
-        {user.assets.map((asset, index) => (
-          <div key={asset.assetsName} className={`rounded-[30px] flex bg-[#2A2A2A] border-[#2A2A2A] mb-1 shadow-sm justify-between pr-5 p-4 ${index === 0 ? 'border-t border-b' : 'border-b'}`}>
-            <div className="flex items-center gap-2">
-              <div className="flex items-center justify-center bg-[#2A2A2A] shadow-sm text-white w-[40px] h-[40px] rounded-full">
-                <Image src={asset.assetsLogo} width={40} height={40} alt={`${asset.assetsName} Logo`} />
+        {user.assets.map((asset, index) => {
+          const assetPriceInUSD = assetPrices[asset.assetsName];
+          const assetQuantity = asset.quantity;
+
+          // Calculate asset value in USD, show $0.00 if quantity is 0
+          const assetValueInUSD = assetPriceInUSD && assetQuantity ? assetPriceInUSD * assetQuantity : 0;
+
+          return (
+            <button
+              key={asset.assetsName}
+              className={`rounded-[30px] w-full flex bg-[#2A2A2A] border-[#2A2A2A] mb-1 shadow-sm justify-between pr-5 p-4 ${index === 0 ? 'border-t border-b' : 'border-b'}`}
+              onClick={() => handleAssetClick(asset)}
+            >
+              <div className="flex gap-2">
+                <div className="flex items-center justify-center bg-[#2A2A2A] shadow-sm text-white w-[40px] h-[40px] rounded-full">
+                  <Image src={asset.assetsLogo} width={40} height={40} alt={`${asset.assetsName} Logo`} />
+                </div>
+                <div className="flex flex-col items-start">
+                  <span className="text-[17px] text-white">{asset.assetsName}</span>
+                  <span className="text-sm text-[#c0c0c0]">{assetPriceInUSD ? `$${assetPriceInUSD.toLocaleString()}` : 'Loading...'}</span>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <span className="text-[17px] text-white">{asset.assetsName}</span>
-                <span className="text-sm text-[#c0c0c0]">{assetPrices[asset.assetsName] ? `$${assetPrices[asset.assetsName].toLocaleString()}` : 'Loading...'}</span>
+              <div className="text-sm flex text-right flex-col">
+                <span className="text-white">{assetQuantity}</span>
+                <span className="text-[#c0c0c0]">{assetValueInUSD === 0 ? '$0.00' : `$${assetValueInUSD.toLocaleString()}`}</span>
               </div>
-            </div>
-            <div className="text-sm flex text-right flex-col">
-              <span className="text-white">{asset.quantity}</span>
-              <span className="text-[#c0c0c0]">{formatCurrency(asset.assetRecentPrice)}</span>
-              {/* <span>{assetPrices[asset.assetsName] ? `$${(assetPrices[asset.assetsName] * asset.quantity).toFixed(2)}` : 'Loading...'}</span> */}
-            </div>
-          </div>
-        ))}
+            </button>
+          );
+        })}
       </div>
+      {selectedAsset && <AssetDetails asset={selectedAsset} onClose={handleCloseModal} />}
     </div>
   );
 }

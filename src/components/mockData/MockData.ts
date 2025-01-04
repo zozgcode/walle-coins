@@ -4,16 +4,9 @@ export const mockAccounts: Account[] = [
   {
     account_id: 'ACC001',
     holder: {
-      firstName: '',
-      lastName: '',
       email: 'a*@gmail.com',
-      jointNames: '',
       username: 'sample1',
       password: 'sample1'
-    },
-    account_details: {
-      wallet_address: 'bc1qw508d...za67d7',
-      balance_usd: 20000.0
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -27,7 +20,7 @@ export const mockAccounts: Account[] = [
         description: 'Bonus Deposit',
         walletAddress: '1A1zP1eP...z8AEuR',
         status: 'Success',
-        quantity: 0.0047,
+        quantity: 0.0031,
         amount_in_usd: 300.0,
         assets: 'BTC'
       },
@@ -37,7 +30,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '3J98t1Wp...X5hA5B',
         status: 'Success',
-        quantity: 0.024,
+        quantity: 0.015,
         amount_in_usd: 1500.0,
         assets: 'BTC'
       },
@@ -47,7 +40,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qw508d...za67d7',
         status: 'Success',
-        quantity: 0.00095,
+        quantity: 0.00062,
         amount_in_usd: 60.0,
         assets: 'BTC'
       },
@@ -57,7 +50,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
-        quantity: 0.00039,
+        quantity: 0.00026,
         amount_in_usd: 25.0,
         assets: 'BTC'
       },
@@ -67,7 +60,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.013,
+        quantity: 0.0083,
         amount_in_usd: 800.0,
         assets: 'BTC'
       }
@@ -75,43 +68,36 @@ export const mockAccounts: Account[] = [
     assets: [
       {
         assetsName: 'BTC',
+        assetsName2: 'Bitcoin',
+        walletAddress: '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 0.042,
-        assetRecentPrice: 2685.0
-      },
-      {
-        assetsName: 'BCH',
-        assetsLogo: 'https://i.imgur.com/eZTcmSl.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0.042
       },
       {
         assetsName: 'ETH',
+        assetsName2: 'Ethereum',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/feMQhL4.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       },
       {
         assetsName: 'BNB',
+        assetsName2: 'Binance Coin',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       }
     ]
   },
   {
     account_id: 'ACC002',
     holder: {
-      firstName: '',
-      lastName: '',
       email: 'a*@gmail.com',
-      jointNames: '',
       username: 'Lordzigg',
       password: '$Roberts24'
-    },
-    account_details: {
-      wallet_address: '35tuPvcdn...81mHffLpX',
-      balance_usd: 20000.0
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -125,7 +111,7 @@ export const mockAccounts: Account[] = [
         description: 'Bonus Deposit',
         walletAddress: '1A1zP1eP...z8AEuR',
         status: 'Success',
-        quantity: 0.0047,
+        quantity: 0.0031,
         amount_in_usd: 300.0,
         assets: 'BTC'
       },
@@ -135,7 +121,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '3J98t1Wp...X5hA5B',
         status: 'Success',
-        quantity: 0.024,
+        quantity: 0.015,
         amount_in_usd: 1500.0,
         assets: 'BTC'
       },
@@ -145,7 +131,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qw508d...za67d7',
         status: 'Success',
-        quantity: 0.00095,
+        quantity: 0.00062,
         amount_in_usd: 60.0,
         assets: 'BTC'
       },
@@ -155,7 +141,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
-        quantity: 0.00039,
+        quantity: 0.00026,
         amount_in_usd: 25.0,
         assets: 'BTC'
       },
@@ -165,47 +151,47 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.013,
+        quantity: 0.0083,
         amount_in_usd: 800.0,
         assets: 'BTC'
       },
       {
-        transaction_id: 'TXN004',
+        transaction_id: 'TXN006',
         date: 'August 8, 2023',
         description: 'Deposit BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
-        quantity: 0.012,
+        quantity: 0.0078,
         amount_in_usd: 756.0,
         assets: 'BTC'
       },
       {
-        transaction_id: 'TXN004',
+        transaction_id: 'TXN007',
         date: 'July 20, 2023',
         description: 'Deposit BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
-        quantity: 0.0067,
+        quantity: 0.0043,
         amount_in_usd: 421.0,
         assets: 'BTC'
       },
       {
-        transaction_id: 'TXN005',
+        transaction_id: 'TXN008',
         date: 'March 4, 2023',
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.015,
+        quantity: 0.0099,
         amount_in_usd: 962.0,
         assets: 'BTC'
       },
       {
-        transaction_id: 'TXN005',
+        transaction_id: 'TXN009',
         date: 'January 4, 2023',
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.0061,
+        quantity: 0.0040,
         amount_in_usd: 385.0,
         assets: 'BTC'
       }
@@ -213,44 +199,36 @@ export const mockAccounts: Account[] = [
     assets: [
       {
         assetsName: 'BTC',
+        assetsName2: 'Bitcoin',
+        walletAddress: '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 0.083,
-        assetRecentPrice: 20000.0
-      },
-      {
-        assetsName: 'BCH',
-        assetsLogo: 'https://i.imgur.com/eZTcmSl.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0.083
       },
       {
         assetsName: 'ETH',
+        assetsName2: 'Ethereum',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/feMQhL4.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       },
       {
         assetsName: 'BNB',
+        assetsName2: 'Binance Coin',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       }
     ]
   },
   {
     account_id: 'ACC003',
     holder: {
-      firstName: '',
-      lastName: '',
       email: 'm*@gmail.com',
-      jointNames: '',
       username: 'Marinakouti2@gmail.com',
       password: 'Marinaahmed01'
-    },
-    account_details: {
-      wallet_address: '35tuPvcdn....81mHffLpX',
-      dubWalletAddress: '35tuPvcdn....81mHffLpX',
-      balance_usd: 20000.0
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -265,7 +243,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '3J98t1Wp...X5hA5B',
         status: 'Success',
-        quantity: 0.082,
+        quantity: 0.052,
         amount_in_usd: 5000.0,
         assets: 'BTC'
       },
@@ -276,7 +254,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qw508d...za67d7',
         status: 'Success',
-        quantity: 0.082,
+        quantity: 0.052,
         amount_in_usd: 5000.0,
         assets: 'BTC'
       },
@@ -287,7 +265,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
-        quantity: 0.082,
+        quantity: 0.052,
         amount_in_usd: 5000.0,
         assets: 'BTC'
       },
@@ -298,7 +276,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.082,
+        quantity: 0.052,
         amount_in_usd: 5000.0,
         assets: 'BTC'
       }
@@ -306,44 +284,36 @@ export const mockAccounts: Account[] = [
     assets: [
       {
         assetsName: 'BTC',
+        assetsName2: 'Bitcoin',
+        walletAddress: '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 0.33,
-        assetRecentPrice: 20000.0
-      },
-      {
-        assetsName: 'BCH',
-        assetsLogo: 'https://i.imgur.com/eZTcmSl.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0.33
       },
       {
         assetsName: 'ETH',
+        assetsName2: 'Ethereum',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/feMQhL4.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       },
       {
         assetsName: 'BNB',
+        assetsName2: 'Binance Coin',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       }
     ]
   },
   {
     account_id: 'ACC004',
     holder: {
-      firstName: '',
-      lastName: '',
       email: 'mialinday5@gmail.com',
-      jointNames: '',
       username: 'mialinday5@gmail.com',
       password: 'Babyboo123'
-    },
-    account_details: {
-      wallet_address: '35tuPvcdn....81mHffLpX',
-      dubWalletAddress: '35tuPvcdn....81mHffLpX',
-      balance_usd: 65000.0
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -357,7 +327,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.11,
+        quantity: 0.072,
         amount_in_usd: 7000.0,
         assets: 'BTC'
       },
@@ -367,7 +337,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
-        quantity: 0.33,
+        quantity: 0.21,
         amount_in_usd: 20500.0,
         assets: 'BTC'
       },
@@ -377,7 +347,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '3J98t1Wp...X5hA5B',
         status: 'Success',
-        quantity: 0.31,
+        quantity: 0.20,
         amount_in_usd: 19580.0,
         assets: 'BTC'
       },
@@ -387,7 +357,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qw508d...za67d7',
         status: 'Success',
-        quantity: 0.28,
+        quantity: 0.18,
         amount_in_usd: 17500.0,
         assets: 'BTC'
       },
@@ -397,7 +367,7 @@ export const mockAccounts: Account[] = [
         description: 'Transfer BTC',
         walletAddress: 'bc1pqw8s5...jktq37',
         status: 'Pending',
-        quantity: -0.15,
+        quantity: -0.098,
         amount_in_usd: 9500.0,
         assets: 'BTC'
       },
@@ -407,7 +377,7 @@ export const mockAccounts: Account[] = [
         description: 'Transfer BTC',
         walletAddress: '1L5bfSLN...asQ43p',
         status: 'Failed',
-        quantity: -0.05,
+        quantity: -0.032,
         amount_in_usd: 3100.0,
         assets: 'BTC'
       },
@@ -417,7 +387,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1zfv5wk...8aswe0',
         status: 'Success',
-        quantity: 0.25,
+        quantity: 0.15,
         amount_in_usd: 15000.0,
         assets: 'BTC'
       },
@@ -427,7 +397,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '1MKYzv8f...R65gWp',
         status: 'Success',
-        quantity: 0.4,
+        quantity: 0.26,
         amount_in_usd: 25000.0,
         assets: 'BTC'
       }
@@ -435,44 +405,36 @@ export const mockAccounts: Account[] = [
     assets: [
       {
         assetsName: 'BTC',
+        assetsName2: 'Bitcoin',
+        walletAddress: '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 1.04,
-        assetRecentPrice: 65000.0
-      },
-      {
-        assetsName: 'BCH',
-        assetsLogo: 'https://i.imgur.com/eZTcmSl.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 1.04
       },
       {
         assetsName: 'ETH',
+        assetsName2: 'Ethereum',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/feMQhL4.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       },
       {
         assetsName: 'BNB',
+        assetsName2: 'Binance Coin',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       }
     ]
   },
   {
     account_id: 'ACC005',
     holder: {
-      firstName: '',
-      lastName: '',
       email: 'm@gmail.com',
-      jointNames: '',
       username: 'LillyMulling21',
       password: '@lilmu1221!'
-    },
-    account_details: {
-      wallet_address: '35tuPvcdn....81mHffLpX',
-      dubWalletAddress: '35tuPvcdn....81mHffLpX',
-      balance_usd: 29100.67
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -486,7 +448,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.1,
+        quantity: 0.072,
         amount_in_usd: 7000.0,
         assets: 'BTC'
       },
@@ -496,7 +458,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
-        quantity: 0.036,
+        quantity: 0.026,
         amount_in_usd: 2500.0,
         assets: 'BTC'
       },
@@ -506,7 +468,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '3J98t1Wp...X5hA5B',
         status: 'Success',
-        quantity: 0.023,
+        quantity: 0.016,
         amount_in_usd: 1580.0,
         assets: 'BTC'
       },
@@ -516,7 +478,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qw508d...za67d7',
         status: 'Success',
-        quantity: 0.017,
+        quantity: 0.012,
         amount_in_usd: 1200.0,
         assets: 'BTC'
       },
@@ -526,7 +488,7 @@ export const mockAccounts: Account[] = [
         description: 'Transfer BTC',
         walletAddress: 'bc1pqw8s5...jktq37',
         status: 'Pending',
-        quantity: -0.15,
+        quantity: -0.098,
         amount_in_usd: 9500.0,
         assets: 'BTC'
       },
@@ -536,7 +498,7 @@ export const mockAccounts: Account[] = [
         description: 'Transfer BTC',
         walletAddress: '1L5bfSLN...asQ43p',
         status: 'Failed',
-        quantity: -0.05,
+        quantity: -0.032,
         amount_in_usd: 3100.0,
         assets: 'BTC'
       },
@@ -546,7 +508,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1zfv5wk...8aswe0',
         status: 'Success',
-        quantity: 0.0072,
+        quantity: 0.0052,
         amount_in_usd: 500.0,
         assets: 'BTC'
       },
@@ -556,7 +518,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '1MKYzv8f...R65gWp',
         status: 'Success',
-        quantity: 0.072,
+        quantity: 0.052,
         amount_in_usd: 5000.0,
         assets: 'BTC'
       }
@@ -564,44 +526,36 @@ export const mockAccounts: Account[] = [
     assets: [
       {
         assetsName: 'BTC',
+        assetsName2: 'Bitcoin',
+        walletAddress: '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 0.42,
-        assetRecentPrice: 29100.0
-      },
-      {
-        assetsName: 'BCH',
-        assetsLogo: 'https://i.imgur.com/eZTcmSl.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0.42
       },
       {
         assetsName: 'ETH',
+        assetsName2: 'Ethereum',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/feMQhL4.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       },
       {
         assetsName: 'BNB',
+        assetsName2: 'Binance Coin',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       }
     ]
   },
   {
     account_id: 'ACC006',
     holder: {
-      firstName: '',
-      lastName: '',
       email: 'k@gmail.com',
-      jointNames: '',
       username: 'katherine_Power29',
       password: 'Joseph2024'
-    },
-    account_details: {
-      wallet_address: '35tuPvcdn....81mHffLpX',
-      dubWalletAddress: '35tuPvcdn....81mHffLpX',
-      balance_usd: 3102.12
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -615,7 +569,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1s443...10j837',
         status: 'Success',
-        quantity: 0.29,
+        quantity: 0.010,
         amount_in_usd: 1000.0,
         assets: 'BTC'
       },
@@ -625,7 +579,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.60,
+        quantity: 0.021,
         amount_in_usd: 2000.0,
         assets: 'BTC'
       },
@@ -635,7 +589,7 @@ export const mockAccounts: Account[] = [
         description: 'Transfer BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
-        quantity: -0.60,
+        quantity: -0.021,
         amount_in_usd: -2000.0,
         assets: 'BTC'
       },
@@ -645,7 +599,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '3J98t1Wp...X5hA5B',
         status: 'Success',
-        quantity: 0.023,
+        quantity: 0.016,
         amount_in_usd: 1580.0,
         assets: 'BTC'
       },
@@ -655,7 +609,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qw508d...za67d7',
         status: 'Success',
-        quantity: 0.017,
+        quantity: 0.012,
         amount_in_usd: 1200.0,
         assets: 'BTC'
       },
@@ -665,7 +619,7 @@ export const mockAccounts: Account[] = [
         description: 'Transfer BTC',
         walletAddress: 'bc1pqw8s5...jktq37',
         status: 'Pending',
-        quantity: -0.15,
+        quantity: -0.098,
         amount_in_usd: -9500.0,
         assets: 'BTC'
       },
@@ -675,7 +629,7 @@ export const mockAccounts: Account[] = [
         description: 'Transfer BTC',
         walletAddress: '1L5bfSLN...asQ43p',
         status: 'Failed',
-        quantity: -0.05,
+        quantity: -0.032,
         amount_in_usd: -3100.0,
         assets: 'BTC'
       },
@@ -685,7 +639,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1zfv5wk...8aswe0',
         status: 'Success',
-        quantity: 0.0072,
+        quantity: 0.0052,
         amount_in_usd: 500.0,
         assets: 'BTC'
       },
@@ -695,7 +649,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '1MKYzv8f...R65gWp',
         status: 'Success',
-        quantity: 0.072,
+        quantity: 0.052,
         amount_in_usd: 5000.0,
         assets: 'BTC'
       }
@@ -703,27 +657,27 @@ export const mockAccounts: Account[] = [
     assets: [
       {
         assetsName: 'BTC',
+        assetsName2: 'Bitcoin',
+        walletAddress: '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 0.86,
-        assetRecentPrice: 3102.12
-      },
-      {
-        assetsName: 'BCH',
-        assetsLogo: 'https://i.imgur.com/eZTcmSl.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0.032
       },
       {
         assetsName: 'ETH',
+        assetsName2: 'Ethereum',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/feMQhL4.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       },
       {
         assetsName: 'BNB',
+        assetsName2: 'Binance Coin',
+        walletAddress: '0x1D1479C185d32EB90533a08b36B3CFa5F84A0E6B',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
-        quantity: 0,
-        assetRecentPrice: 0.0
+        quantity: 0
       }
     ]
   }

@@ -2,18 +2,12 @@
 export interface Account {
   account_id: string;
   holder: {
-    firstName?: string;
-    lastName?: string;
     email?: string;
-    jointNames: string;
+    accountWalletAddress?: string;
     username: string;
     password: string;
   };
-  account_details: {
-    wallet_address: string;
-    dubWalletAddress?: string;
-    balance_usd?: number;
-  };
+ 
   transaction_mgs_code: {
     transaction_text_msg?: string;
     transaction_code?: string;
@@ -38,6 +32,8 @@ export interface Transaction {
 export interface Assets {
   assetsLogo: string;
   assetsName: string;
+  assetsName2?: string;
+  walletAddress?: string;
+  barCodeImgUrl?: string;
   quantity: number;
-  assetRecentPrice: number;
 }
