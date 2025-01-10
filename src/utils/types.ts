@@ -4,6 +4,8 @@ export interface Account {
   holder: {
     email?: string;
     accountWalletAddress?: string;
+    dateCreated?: string;
+    dateUpdated?: string;
     username: string;
     password: string;
   };
@@ -18,7 +20,7 @@ export interface Account {
 }
 
 export interface Transaction {
-  transaction_id: string;
+  transaction_id?: string;
   date: string;
   time?: string;
   description: string;
