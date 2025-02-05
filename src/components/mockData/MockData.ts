@@ -932,7 +932,7 @@ export const mockAccounts: Account[] = [
         walletAddress: 'bc1qhl7znnt6uj4kcez96az2lt9x3w8lax46hvfv2j',
         barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 3.08
+        quantity: 3.09
       },
       {
         assetsName: 'ETH',
