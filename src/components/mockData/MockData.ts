@@ -844,7 +844,7 @@ export const mockAccounts: Account[] = [
     },
     transaction_history: [
       {
-        date: 'January 21, 2025',
+        date: 'December 27, 2024',
         description: 'Transfer BTC',
         walletAddress: 'bc1s443...10j837',
         status: 'Success',
@@ -853,7 +853,7 @@ export const mockAccounts: Account[] = [
         assets: 'BTC'
       },
       {
-        date: 'January 15, 2025',
+        date: 'December 20, 2024',
         description: 'Transfer BTC',
         walletAddress: '3J98t1Wp...X5hA5B',
         status: 'Success',
@@ -862,7 +862,7 @@ export const mockAccounts: Account[] = [
         assets: 'BTC'
       },
       {
-        date: 'August 21, 2024',
+        date: 'December 11, 2024',
         description: 'Deposit BTC',
         walletAddress: 'bc1qw508d...za67d7',
         status: 'Success',
@@ -871,7 +871,7 @@ export const mockAccounts: Account[] = [
         assets: 'BTC'
       },
       {
-        date: 'July 25, 2024',
+        date: 'December 8, 2024',
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
@@ -880,7 +880,7 @@ export const mockAccounts: Account[] = [
         assets: 'BTC'
       },
       {
-        date: 'July 9, 2024',
+        date: 'December 7, 2024',
         description: 'Transfer BTC',
         walletAddress: '1BoatSLR...21aF5W',
         status: 'Success',
@@ -889,16 +889,16 @@ export const mockAccounts: Account[] = [
         assets: 'BTC'
       },
       {
-        date: 'June 15, 2024',
+        date: 'December 5, 2024',
         description: 'Deposit BTC',
         walletAddress: 'bc1pqw8s5...jktq37',
-        status: 'Pending',
+        status: 'Success',
         quantity: 0.098,
         amount_in_usd: 9500.0,
         assets: 'BTC'
       },
       {
-        date: 'June 2, 2024',
+        date: 'December 5, 2024',
         description: 'Transfer BTC',
         walletAddress: '1L5bfSLN...asQ43p',
         status: 'Failed',
@@ -907,7 +907,7 @@ export const mockAccounts: Account[] = [
         assets: 'BTC'
       },
       {
-        date: 'June 25, 2024',
+        date: 'December 3, 2024',
         description: 'Deposit BTC',
         walletAddress: 'bc1zfv5wk...8aswe0',
         status: 'Success',
@@ -916,7 +916,7 @@ export const mockAccounts: Account[] = [
         assets: 'BTC'
       },
       {
-        date: 'May 10, 2024',
+        date: 'December 1, 2024',
         description: 'Deposit BTC',
         walletAddress: '1MKYzv8f...R65gWp',
         status: 'Success',
@@ -932,7 +932,7 @@ export const mockAccounts: Account[] = [
         walletAddress: 'bc1qhl7znnt6uj4kcez96az2lt9x3w8lax46hvfv2j',
         barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 3.07
+        quantity: 3.08
       },
       {
         assetsName: 'ETH',
