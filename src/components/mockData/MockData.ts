@@ -191,7 +191,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1qar0s8...53kw5n',
         status: 'Success',
-        quantity: 0.0040,
+        quantity: 0.004,
         amount_in_usd: 385.0,
         assets: 'BTC'
       }
@@ -347,7 +347,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: '3J98t1Wp...X5hA5B',
         status: 'Success',
-        quantity: 0.20,
+        quantity: 0.2,
         amount_in_usd: 19580.0,
         assets: 'BTC'
       },
@@ -586,7 +586,7 @@ export const mockAccounts: Account[] = [
         description: 'Deposit BTC',
         walletAddress: 'bc1s443...10j837',
         status: 'Success',
-        quantity: 0.010,
+        quantity: 0.01,
         amount_in_usd: 1000.0,
         assets: 'BTC'
       },
@@ -810,6 +810,129 @@ export const mockAccounts: Account[] = [
         barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
         quantity: 3.61
+      },
+      {
+        assetsName: 'ETH',
+        assetsName2: 'Ethereum',
+        walletAddress: '0x4dEea33c8A880b1841B4b7A94ce13ffefA5c052e',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
+        assetsLogo: 'https://i.imgur.com/feMQhL4.png',
+        quantity: 0
+      },
+      {
+        assetsName: 'BNB',
+        assetsName2: 'Binance Coin',
+        walletAddress: '0x4dEea33c8A880b1841B4b7A94ce13ffefA5c052e',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
+        assetsLogo: 'https://i.imgur.com/EKHVvWB.png',
+        quantity: 0
+      }
+    ]
+  },
+  {
+    account_id: 'ACC008',
+    holder: {
+      email: 'e***@gmail.com',
+      dateCreated: '2/5/2025', // m/d/y
+      username: 'ElmerLants2',
+      password: 'Lelant_Elm@01'
+    },
+    transaction_mgs_code: {
+      transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
+      transaction_code: '',
+      wireDate: true
+    },
+    transaction_history: [
+      {
+        date: 'January 21, 2025',
+        description: 'Transfer BTC',
+        walletAddress: 'bc1s443...10j837',
+        status: 'Success',
+        quantity: -0.15,
+        amount_in_usd: -15000.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'January 15, 2025',
+        description: 'Transfer BTC',
+        walletAddress: '3J98t1Wp...X5hA5B',
+        status: 'Success',
+        quantity: -0.021,
+        amount_in_usd: -2000.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'August 21, 2024',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1qw508d...za67d7',
+        status: 'Success',
+        quantity: 0.019,
+        amount_in_usd: 1800.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'July 25, 2024',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1qar0s8...53kw5n',
+        status: 'Success',
+        quantity: 0.12,
+        amount_in_usd: 12000.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'July 9, 2024',
+        description: 'Transfer BTC',
+        walletAddress: '1BoatSLR...21aF5W',
+        status: 'Success',
+        quantity: -0.052,
+        amount_in_usd: -5000.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'June 15, 2024',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1pqw8s5...jktq37',
+        status: 'Pending',
+        quantity: 0.098,
+        amount_in_usd: 9500.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'June 2, 2024',
+        description: 'Transfer BTC',
+        walletAddress: '1L5bfSLN...asQ43p',
+        status: 'Failed',
+        quantity: -0.032,
+        amount_in_usd: -3100.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'June 25, 2024',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1zfv5wk...8aswe0',
+        status: 'Success',
+        quantity: 0.036,
+        amount_in_usd: 3500.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'May 10, 2024',
+        description: 'Deposit BTC',
+        walletAddress: '1MKYzv8f...R65gWp',
+        status: 'Success',
+        quantity: 0.052,
+        amount_in_usd: 5000.0,
+        assets: 'BTC'
+      }
+    ],
+    assets: [
+      {
+        assetsName: 'BTC',
+        assetsName2: 'Bitcoin',
+        walletAddress: 'bc1qhl7znnt6uj4kcez96az2lt9x3w8lax46hvfv2j',
+        barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
+        assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
+        quantity: 3.07
       },
       {
         assetsName: 'ETH',

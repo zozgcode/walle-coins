@@ -116,7 +116,7 @@ export default function SendCoinsModal({ coin, asset, onClose }: SendCoinsModalP
       </div>
       {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
       <div className="flex items-center justify-between mt-2">
-        <span className="text-[#c0c0c0] text-sm">${equivalentInUSD}</span>
+        {/* <span className="text-[#c0c0c0] text-sm">${equivalentInUSD}</span> */}
         <span className="text-[#c0c0c0] text-sm">
           Available {asset.quantity.toFixed(2)} {coin.symbol}
         </span>
@@ -143,7 +143,8 @@ export default function SendCoinsModal({ coin, asset, onClose }: SendCoinsModalP
           <div className="bg-[#181818] p-5 rounded-lg">
             <h2 className="text-white text-lg mb-3">Confirmation</h2>
             <p className="text-[#c0c0c0]">
-              You are about to send {amount} {coin.symbol} ~ ${equivalentInUSD} to {recipient}.
+              You are about to send {amount} {coin.symbol} to {recipient}.
+              {/* You are about to send {amount} {coin.symbol} ~ ${equivalentInUSD} to {recipient}. */}
             </p>
             <div className="flex justify-end mt-4">
               <button onClick={() => setShowConfirmation(false)} className="p-2 mr-2 bg-[#333333] text-white rounded">
