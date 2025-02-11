@@ -8,6 +8,8 @@ export interface Account {
     dateUpdated?: string;
     username: string;
     password: string;
+    createdAt?: string;
+    updatedAt?: string;
   };
  
   transaction_mgs_code: {

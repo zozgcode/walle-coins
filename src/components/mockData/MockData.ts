@@ -555,7 +555,8 @@ export const mockAccounts: Account[] = [
     holder: {
       email: 'k@gmail.com',
       username: 'katherine_Power29',
-      password: 'Joseph2024'
+      password: 'Joseph2024',
+      updatedAt: '2/11/2025' // m/d/y
     },
     transaction_mgs_code: {
       transaction_text_msg: 'To continue this transaction, Please enter the code sent to you',
@@ -563,6 +564,51 @@ export const mockAccounts: Account[] = [
       wireDate: true
     },
     transaction_history: [
+      {
+        date: 'February 9, 2025',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1q5a7c...f2e9d8m',
+        status: 'Success',
+        quantity: 0.01,
+        amount_in_usd: 1000.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'February 9, 2025',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1q5a7c...f2e9d8m',
+        status: 'Success',
+        quantity: 0.01,
+        amount_in_usd: 1000.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'February 7, 2025',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1q7d5f...a9c3e8k',
+        status: 'Success',
+        quantity: 0.0046,
+        amount_in_usd: 450.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'February 7, 2025',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1q7d5f...a9c3e8k',
+        status: 'Success',
+        quantity: 0.0046,
+        amount_in_usd: 450.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'February 7, 2025',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1q7d5f...a9c3e8k',
+        status: 'Success',
+        quantity: 0.0041,
+        amount_in_usd: 400.0,
+        assets: 'BTC'
+      },
       {
         date: 'January 8, 2025',
         description: 'Deposit BTC',
@@ -678,7 +724,7 @@ export const mockAccounts: Account[] = [
         walletAddress: '1Lbcfr7sAHTD9CgdQo3HTMTkV8LK4ZnX71',
         barCodeImgUrl: 'https://i.imgur.com/ZOqOQmH.png',
         assetsLogo: 'https://i.imgur.com/N6UMWP2.png',
-        quantity: 0.152
+        quantity: 0.19
       },
       {
         assetsName: 'ETH',
