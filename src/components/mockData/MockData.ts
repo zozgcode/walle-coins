@@ -565,9 +565,27 @@ export const mockAccounts: Account[] = [
     },
     transaction_history: [
       {
+        date: 'April 30, 2025',
+        description: 'Deposit BTC',
+        walletAddress: 'bc1qar0s8...53kw5n',
+        status: 'Success',
+        quantity: 0.021,
+        amount_in_usd: 2000.0,
+        assets: 'BTC'
+      },
+      {
+        date: 'April 29, 2025',
+        description: 'Profit',
+        walletAddress: '1A1zP1eP...z8AEuR',
+        status: 'Success',
+        quantity: 0.0068,
+        amount_in_usd: 640.0,
+        assets: 'BTC'
+      },
+      {
         date: 'February 9, 2025',
         description: 'Deposit BTC',
-        walletAddress: 'bc1q5a7c...f2e9d8m',
+        walletAddress: 'bc1dh6d8...f2e9d8m',
         status: 'Success',
         quantity: 0.01,
         amount_in_usd: 1000.0,
